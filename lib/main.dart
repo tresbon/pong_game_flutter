@@ -31,15 +31,20 @@ class Pong extends StatelessWidget {
   }
 }
 
-class Game extends StatefulWidget {
-  @override
-  _GameState createState() => _GameState();
-}
-
-class _GameState extends State<Game> {
+class Game extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text('Pong'),
+          backgroundColor: Colors.orange[900],
+        ),
+        body: Container(
+
+        ),
+      ),
+    );
   }
 }
 
