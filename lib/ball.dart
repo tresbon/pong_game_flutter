@@ -6,6 +6,7 @@ class Ball extends StatelessWidget {
     final double diam = 50;
     return Container(
       height: diam,
+      width: diam,
       decoration:  new BoxDecoration(
         color: Colors.yellow[600],
         shape: BoxShape.circle,

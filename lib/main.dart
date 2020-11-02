@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'pong.dart';
 
 void main() {
-  runApp(Pong());
+  runApp(MyApp());
 }
 
-class Pong extends StatelessWidget {
+class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -40,7 +41,7 @@ class Game extends StatelessWidget {
           title: Text('Pong'),
           backgroundColor: Colors.orange[900],
         ),
-        body: Container(
+        body: Pong(
 
         ),
       ),
